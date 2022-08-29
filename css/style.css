@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Estilos Generales*/
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #ffffff; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", serif; }
+
+h1,
+p {
+  margin-bottom: 1.5em; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+  a:visited {
+    color: #000000; }
+
+/*Animaciones*/
+@keyframes Aparicion {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+/* HERO */
+.hero {
+  background-image: url(../img/coff1.jpg);
+  height: 88vh;
+  color: #ffffff;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .hero h1,
+  .hero p,
+  .hero .button {
+    animation: Aparicion 1500ms 1; }
+  .hero p {
+    max-width: 70ch;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards; }
+  .hero .button {
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards; }
+
+/* NavBar*/
+nav {
+  padding: 0 40px;
+  background-color: #000000;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center; }
+  nav ul li {
+    display: inline-block;
+    font-size: 1.125rem;
+    padding: 10px 20px; }
+    nav ul li.activo {
+      font-weight: bold;
+      background-color: #b5975a;
+      color: #ffffff; }
+    nav ul li:hover {
+      background-color: #b5975a;
+      transition: 300ms; }
+    nav ul li:active {
+      background-color: #ad7d6a;
+      transition: 150ms; }
+    nav ul li a {
+      color: #ffffff; }
+      nav ul li a:visited {
+        color: white; }
+  nav .logo {
+    width: 48px; }
+
+/* FOOTER */
+.footer {
+  padding: 40px 40px 0 40px;
+  text-align: center;
+  font-size: 0.875rem; }
+
+/* Botones */
+a.button,
+input.button {
+  background-color: #b5975a;
+  padding: 8px 18px;
+  border-radius: 4px;
+  display: inline-block;
+  border: 1px solid #b5975a;
+  max-width: max-content;
+  color: #ffffff;
+  font-weight: 600; }
+  a.button:hover,
+  input.button:hover {
+    background-color: #ad7d6a;
+    transition: 300ms;
+    border-color: #ad7d6a; }
+
+.buttonSec {
+  background-color: transparent;
+  padding: 8px 18px;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: max-content;
+  outline: none;
+  border: none;
+  color: #ad7d6a; }
+
+/* CARDS */
+.cards {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  height: auto;
+  width: 400px;
+  margin: 24px;
+  padding-bottom: 32px;
+  box-shadow: 1px 1px 10px 2px #491d08; }
+  .cards img {
+    width: 100%;
+    border-radius: 8px 8px 0 0; }
+  .cards p {
+    min-height: 100px; }
+  .cards:hover {
+    transform: translateY(-3px);
+    transition: 400ms ease-in-out; }
+
+.cardBody {
+  padding: 24px; }
+
+/* Formulario */
+form {
+  background-color: #ece4dd;
+  padding: 24px;
+  width: 40%; }
+  form > div {
+    margin: 16px 0; }
+
+.contactoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px; }
+  .contactoForm > div {
+    display: flex;
+    width: 75%;
+    justify-content: center; }
+
+/* Formatos */
+.textCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.destacados {
+  display: grid;
+  grid-template-areas: "Titulo Titulo Titulo" "card1 card2 card3"; }
+  .destacados .destacadosTitulo {
+    grid-area: Titulo;
+    text-align: center; }
+  .destacados .card1 {
+    grid-area: card1; }
+  .destacados .card2 {
+    grid-area: card2; }
+  .destacados .card3 {
+    grid-area: card3; }
+
+.productos {
+  text-align: center;
+  padding-top: 2rem; }
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  column-gap: 16px; }
+
+.recetaBanner {
+  background-image: url(../img/affogato.webp);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; }
+
+.receta {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px; }
+  .receta p {
+    max-width: 70ch; }
+
+.nosotros {
+  display: flex;
+  padding-top: 24px; }
+  .nosotros div:nth-child(2) {
+    padding: 0 24px; }
+
+.nosotrosImg {
+  margin: 24px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  column-gap: 16px; }
+
+.servicio {
+  padding: 40px 0; }
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .destacados {
+    display: grid;
+    grid-template-areas: "Titulo Titulo" "card1 card2" "card3 ."; }
+  .nosotros {
+    flex-wrap: wrap; } }
+
+@media (max-width: 992px) {
+  .destacados {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "Titulo" "card1" "card2" "card3"; }
+  .cardContainer {
+    justify-content: center; }
+  .contactoForm > div {
+    flex-direction: column; }
+  form {
+    width: 100%; } }
+
+@media (max-width: 768px) {
+  section {
+    padding: 10px 20px; }
+  .cardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+  .cards {
+    width: auto;
+    margin: 16px; }
+  .hero {
+    padding: 20px;
+    height: 50vh;
+    background-position: 35% 20%; }
+  .recetaArt {
+    flex-direction: column; }
+  .nosotrosImg {
+    width: auto; }
+    .nosotrosImg img {
+      width: 100%; }
+  .contactoForm {
+    padding: 0; }
+    .contactoForm > div {
+      width: 90%; } }
+
+@media (max-width: 576px) {
+  .cardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } }

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color_principal: #b5975a;
+$color_secundario: #ad7d6a;
+$color_cards: #ffffff;
+$color_form: #ece4dd;
+$color_font: #000000;
+$box_shadow: 1px 1px 10px 2px rgba(73, 29, 8, 20%);
+
+/*Estilos Generales*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: $color_cards;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Noto Serif", serif;
+}
+
+h1,
+p {
+    margin-bottom: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: $color_font;
+
+    &:visited {
+        color: $color_font;
+    }
+}
+
+/*Animaciones*/
+
+@keyframes Aparicion {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+/* HERO */
+
+.hero {
+    background-image: url(../img/coff1.jpg);
+    height: 88vh;
+    color: $color_cards;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1,
+    p,
+    .button {
+        animation: Aparicion 1500ms 1;
+    }
+
+    p {
+        max-width: 70ch;
+        animation-delay: 500ms;
+        animation-fill-mode: backwards
+    }
+
+    .button {
+        animation-delay: 1000ms;
+        animation-fill-mode: backwards;
+    }
+}
