@@ -1,0 +1,145 @@
+/* NavBar*/
+nav {
+    padding: 0 40px;
+    background-color: $color_font;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+    ul li {
+        display: inline-block;
+        font-size: 1.125rem;
+        padding: 10px 20px;
+
+        &.activo {
+            font-weight: bold;
+            background-color: $color_principal;
+            color: $color_cards;
+        }
+
+        &:hover {
+            background-color: $color_principal;
+            transition: 300ms;
+        }
+
+        &:active {
+            background-color: $color_secundario;
+            transition: 150ms;
+        }
+
+        a {
+            color: $color_cards;
+
+            &:visited {
+                color: white;
+            }
+        }
+
+
+    }
+
+    .logo {
+        width: 48px;
+    }
+
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 40px 40px 0 40px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+
+/* Botones */
+
+%button {
+    padding: 8px 18px;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: max-content;}
+
+.button, 
+a.button,
+input.button {
+    @extend %button;
+    background-color: $color_principal;
+    border: 1px solid $color_principal;
+    color: #ffffff;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $color_secundario;
+        transition: 300ms;
+        border-color: $color_secundario;
+    }
+}
+
+.buttonSec {
+    @extend %button;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #ad7d6a;
+}
+
+/* CARDS */
+
+.cards {
+    background-color: $color_cards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    height: auto;
+    width: 400px;
+    margin: 24px;
+    padding-bottom: 32px;
+    box-shadow: $box_shadow;
+
+    img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    p {
+        min-height: 100px;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        transition: 400ms ease-in-out;
+    }
+}
+
+.cardBody {
+    padding: 24px;
+}
+
+/* Formulario */
+
+form {
+    background-color: $color_form;
+    padding: 24px;
+    width: 40%;
+
+    >div {
+        margin: 16px 0;
+    }
+}
+
+
+.contactoForm {
+    @include flexbox (flex, center, center, column);
+    padding-top: 40px;
+
+    >div {
+        display: flex;
+        width: 75%;
+        justify-content: center;
+    }
+}

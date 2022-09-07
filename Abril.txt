@@ -1,0 +1,6 @@
+Hola Abril! Edité los alts de todas las imagenes que pude encontrar. Luego corregí la descripcion y el titulo de las cinco paginas. Cambié la imagen de fondo del home para darle mejor accesibilidad por un tema de contraste.
+Y aparte corregí con un background size en cover para que dicha imagen no que me quedara en mosaico al hacer zoom out/zoom in.
+
+
+
+

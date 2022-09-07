@@ -1,0 +1,86 @@
+/* Formatos */
+.textCenter {
+    @include flexbox (flex, center, center, column);
+}
+
+.destacados {
+    display: grid;
+    grid-template-areas:
+        "Titulo Titulo Titulo"
+        "card1 card2 card3";
+
+    .destacadosTitulo {
+        grid-area: Titulo;
+        text-align: center;
+    }
+
+    .card1 {
+        grid-area: card1;
+    }
+
+    .card2 {
+        grid-area: card2;
+    }
+
+    .card3 {
+        grid-area: card3;
+    }
+}
+
+
+.productos {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    column-gap: 16px;
+}
+
+.recetaBanner {
+    background-image: url(../img/affogato.webp);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color_cards;
+}
+
+.receta {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+
+    p {
+        max-width: 70ch;
+    }
+}
+
+
+
+.nosotros {
+    display: flex;
+    padding-top: 24px;
+
+    div:nth-child(2) {
+        padding: 0 24px;
+    }
+}
+
+.nosotrosImg {
+    margin: 24px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+.servicio {
+    padding: 40px 0;
+}
