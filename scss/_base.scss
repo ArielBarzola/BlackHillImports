@@ -11,7 +11,6 @@ $color_form: #ece4dd;
 $color_font: #000000;
 $box_shadow: 1px 1px 10px 2px rgba(73, 29, 8, 20%);
 
-<<<<<<< HEAD
 $breakpoints: (s: '576px', md: '768px', l: '992px', xl: '1200px');
 
 //Mixin
@@ -23,8 +22,6 @@ $breakpoints: (s: '576px', md: '768px', l: '992px', xl: '1200px');
     }
 
 
-=======
->>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
 /*Estilos Generales*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
@@ -80,10 +77,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
     background-size: cover;
-=======
->>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
 
     h1,
     p,

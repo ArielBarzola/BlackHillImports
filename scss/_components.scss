@@ -56,7 +56,6 @@ nav {
 
 /* Botones */
 
-<<<<<<< HEAD
 %button {
     padding: 8px 18px;
     border-radius: 4px;
@@ -69,16 +68,6 @@ input.button {
     @extend %button;
     background-color: $color_principal;
     border: 1px solid $color_principal;
-=======
-a.button,
-input.button {
-    background-color: $color_principal;
-    padding: 8px 18px;
-    border-radius: 4px;
-    display: inline-block;
-    border: 1px solid $color_principal;
-    max-width: max-content;
->>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
     color: #ffffff;
     font-weight: 600;
 
@@ -90,16 +79,8 @@ input.button {
 }
 
 .buttonSec {
-<<<<<<< HEAD
     @extend %button;
     background-color: transparent;
-=======
-    background-color: transparent;
-    padding: 8px 18px;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: max-content;
->>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
     outline: none;
     border: none;
     color: #ad7d6a;
@@ -153,14 +134,7 @@ form {
 
 
 .contactoForm {
-<<<<<<< HEAD
     @include flexbox (flex, center, center, column);
-=======
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
->>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
     padding-top: 40px;
 
     >div {

@@ -1,13 +1,6 @@
 /* Formatos */
 .textCenter {
-<<<<<<< HEAD
     @include flexbox (flex, center, center, column);
-=======
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
->>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
 }
 
 .destacados {
