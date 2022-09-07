@@ -44,8 +44,12 @@ a {
   padding-left: 40px;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   justify-content: center;
   background-size: cover; }
+=======
+  justify-content: center; }
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
   .hero h1,
   .hero p,
   .hero .button {
@@ -94,6 +98,7 @@ nav {
   font-size: 0.875rem; }
 
 /* Botones */
+<<<<<<< HEAD
 .button,
 a.button,
 input.button, .buttonSec {
@@ -110,6 +115,18 @@ input.button {
   color: #ffffff;
   font-weight: 600; }
   .button:hover,
+=======
+a.button,
+input.button {
+  background-color: #b5975a;
+  padding: 8px 18px;
+  border-radius: 4px;
+  display: inline-block;
+  border: 1px solid #b5975a;
+  max-width: max-content;
+  color: #ffffff;
+  font-weight: 600; }
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
   a.button:hover,
   input.button:hover {
     background-color: #ad7d6a;
@@ -118,6 +135,13 @@ input.button {
 
 .buttonSec {
   background-color: transparent;
+<<<<<<< HEAD
+=======
+  padding: 8px 18px;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: max-content;
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
   outline: none;
   border: none;
   color: #ad7d6a; }
@@ -157,9 +181,15 @@ form {
 
 .contactoForm {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   flex-direction: column;
+=======
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
   padding-top: 40px; }
   .contactoForm > div {
     display: flex;
@@ -169,9 +199,15 @@ form {
 /* Formatos */
 .textCenter {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+=======
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
 
 .destacados {
   display: grid;

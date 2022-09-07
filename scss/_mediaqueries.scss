@@ -1,7 +1,11 @@
 /* Media Queries */
+<<<<<<< HEAD
 
 
 @media (max-width: map-get($breakpoints, xl)) {
+=======
+@media (max-width: 1200px) {
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
     .destacados {
         display: grid;
         grid-template-areas:
@@ -16,7 +20,11 @@
 }
 
 
+<<<<<<< HEAD
 @media (max-width: map-get($breakpoints, l)) {
+=======
+@media (max-width: 992px) {
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
 
     .destacados {
         display: grid;
@@ -42,7 +50,11 @@
 }
 
 
+<<<<<<< HEAD
 @media (max-width: map-get($breakpoints, md)) {
+=======
+@media (max-width: 768px) {
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
 
     section {
         padding: 10px 20px;
@@ -86,7 +98,11 @@
 
 }
 
+<<<<<<< HEAD
 @media (max-width: map-get($breakpoints, s)) {
+=======
+@media (max-width: 576px) {
+>>>>>>> 5d754a81adcada505fcc505280e57d6662a70aa7
 
     .cardContainer {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
