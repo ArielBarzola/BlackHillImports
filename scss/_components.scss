@@ -48,9 +48,16 @@ nav {
 /* FOOTER */
 
 .footer {
-    padding: 40px 40px 0 40px;
+    margin-top: 32px;
+    min-height: 10vh;
     text-align: center;
     font-size: 0.875rem;
+    background-color: lighten($color_secundario, 20%);
+    @include flexbox (flex, center, center);
+
+    p {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -141,5 +148,9 @@ form {
         display: flex;
         width: 75%;
         justify-content: center;
+    }
+
+    h1 {
+        color: $color_secundario;
     }
 }

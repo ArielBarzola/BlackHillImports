@@ -89,9 +89,16 @@ nav {
 
 /* FOOTER */
 .footer {
-  padding: 40px 40px 0 40px;
+  margin-top: 32px;
+  min-height: 10vh;
   text-align: center;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  background-color: #d1b6ac;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer p {
+    margin-bottom: 0; }
 
 /* Botones */
 .button,
@@ -165,6 +172,8 @@ form {
     display: flex;
     width: 75%;
     justify-content: center; }
+  .contactoForm h1 {
+    color: #ad7d6a; }
 
 /* Formatos */
 .textCenter {
@@ -175,7 +184,8 @@ form {
 
 .productos {
   text-align: center;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  color: #ad7d6a; }
 
 .cardContainer {
   display: grid;
@@ -183,8 +193,10 @@ form {
   column-gap: 16px; }
 
 .recetaBanner {
-  background-image: url(../img/affogato.webp);
+  background-image: url(../img/affogato.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
   height: 300px;
   width: 100%;
   display: flex;
@@ -199,12 +211,27 @@ form {
   padding: 10px; }
   .receta p {
     max-width: 70ch; }
+  .receta h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ad7d6a; }
+  .receta h2, .receta h3 {
+    padding-top: 24px;
+    padding-bottom: 16px; }
+  .receta img {
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom; }
+  .receta .mugcake {
+    object-position: center; }
 
 .nosotros {
   display: flex;
   padding-top: 24px; }
   .nosotros div:nth-child(2) {
     padding: 0 24px; }
+  .nosotros h1 {
+    color: #ad7d6a; }
 
 .nosotrosImg {
   margin: 24px;
@@ -216,6 +243,14 @@ form {
 
 .servicio {
   padding: 40px 0; }
+  .servicio p {
+    max-width: 70ch;
+    text-align: left; }
+  .servicio h2 {
+    color: #ad7d6a; }
+  .servicio .textCenter {
+    padding-top: 10%;
+    border-top: 1px solid #b5975a; }
 
 /* Media Queries */
 @media (max-width: 1200px) {
