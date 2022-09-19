@@ -173,7 +173,8 @@ form {
     width: 75%;
     justify-content: center; }
   .contactoForm h1 {
-    color: #ad7d6a; }
+    color: #ad7d6a;
+    padding-top: 24px; }
 
 /* Formatos */
 .textCenter {
@@ -296,5 +297,8 @@ form {
       width: 90%; } }
 
 @media (max-width: 576px) {
+  .servicio .textCenter {
+    padding-left: 10px;
+    padding-right: 10px; }
   .cardContainer {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } }
